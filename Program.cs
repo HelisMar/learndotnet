@@ -6,7 +6,9 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int number;
+            number=1;
+            Console.WriteLine(number);
         }
     }
 }
