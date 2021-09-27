@@ -6,22 +6,18 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-            //int number;
-            //number=1;
-           
+      
+            int num = 1;
+            while (num<1000000) {  //while vahele alati loogiline number
+                Console.WriteLine(num);
+                num *=2;
+                 
+
+             } //Kõik kahe astmed alla miljoni? Ma peast ei tea palju neid on.. Seega ..
+            
+            
 
     
-            // bool answer = true || true;
-
-            // bool answer = 10 < 1 || 2 >1 && 3 == 1;
-
-            int num = 10;
-            if(num<12){ 
-
-                Console.WriteLine("väiksem");
-            }
-
-             
 
         }
     }
