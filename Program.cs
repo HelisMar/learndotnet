@@ -6,18 +6,43 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-      
-            int num = 1;
-            while (num<1000000) {  //while vahele alati loogiline number
-                Console.WriteLine(num);
-                num *=2;
+            try 
+            {
+             Console.WriteLine("Sisesta esimene number:");
+             int num1_= int.Parse(Console.ReadLine());
+             Console.WriteLine("Sisesta teine number:");
+             int num2 = int.Parse(Console.ReadLine());
+             Console.WriteLine("Siesta operatsioon (liida/lahuta / korruta / jaga):");
+             string operation = Console.ReadLine();
+             int anwser;
+             switch(operation) 
+            {
+                case "liida":
+                   anwser = num1_ + num2;
+                   break;
+                case "lahuta":
+                   anwser = num1_ - num2;
+                 break;
+                case "korruta":
+                  anwser = num1_ * num2;
+                  break;
+                case "jaga":
+                 anwser = num1_ / num2;
+                 break;
+                 default:
+                        throw(new Exception());
+
+                
+                 }
+
+          
+                Console.WriteLine("vastus on: " + anwser);
                  
-
-             } //Kõik kahe astmed alla miljoni? Ma peast ei tea palju neid on.. Seega ..
-            
-            
-
-    
+                
+            }
+           catch {
+               Console.WriteLine("vale sisend!!");
+           }
 
         }
     }
