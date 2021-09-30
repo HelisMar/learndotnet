@@ -6,18 +6,15 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-           Console.WriteLine("Mis on sinu nimi?");
-           string name = Console.ReadLine();
-           
-         if(name == "Alice")
-         { Console.WriteLine("Tere " + name + "!");
+           Console.WriteLine("Kirjuta üks number:");
+           int n = int.Parse(Console.ReadLine());
 
-         } else if (name == "Bob")  {
-             Console.WriteLine("Tere " + name + "!");
-         }
-           else { Console.WriteLine ("Tere!") ;
-           
+           for (int i = 1; i <= n; i++) {
+               Console.WriteLine("{0}" , i);
+
            }
+           Console.WriteLine();
+         
          
             
         }
