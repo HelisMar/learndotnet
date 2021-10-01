@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace learndotnet
 {
@@ -6,16 +7,12 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-           Console.WriteLine("Kirjuta üks number:");
-           int n = int.Parse(Console.ReadLine());
-
-           for (int i = 1; i <= n; i++) {
-               Console.WriteLine("{0}" , i);
-
-           }
-           Console.WriteLine();
          
-         
+         List<int> numbers = new List<int>();
+         numbers.Add(10);
+         Console.WriteLine(numbers[0]);
+         bool contains = numbers.Contains(2);
+         Console.WriteLine(contains);
             
         }
 
