@@ -7,32 +7,17 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-         
-         int[] array = {5,2,6,1,4,3,4}; 
-         int[] result = InsertSort(array);
-         foreach(int num in result){
-                Console.WriteLine(num);
-            }
-        }
-        static int[] InsertSort(int[]array){
-            for(int i = 0; i< array.Length; i++){
-                int min = array[i];
-                int minPos = i;
-                for(int j = i; j<array.Length;j++){
-                    if(array[j]<min) {
-                        min = array[j];
-                        minPos = j;
-                    }
-                }
-                int temp=array[i];
-                array[i] = min;
-                array[minPos] = temp;
+        
+         Console.WriteLine("Kirjuta üks number:");
+           int n = int.Parse(Console.ReadLine());
 
-            }
-            return array;
-
-        }
-
+           for (int i = 1; i <= n ; i++) 
+            if(i%3==0 || i%5==0)
+           {
+               Console.WriteLine("{0}" , i);
+        
+           }
         }
     }
+}
 
