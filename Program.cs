@@ -8,15 +8,25 @@ namespace learndotnet
         static void Main(string[] args)
         {
         
-         Console.WriteLine("Kirjuta üks number:");
-           int n = int.Parse(Console.ReadLine());
+            Random Mäng = new Random();
 
-           for (int i = 1; i <= n ; i++) 
-            if(i%3==0 || i%5==0)
-           {
-               Console.WriteLine("{0}" , i);
-        
-           }
+         Console.WriteLine("Arva ära, mis numbri peale ma mõtlen");
+         int n = int.Parse(Console.ReadLine());
+            Random random = new Random();              
+            double num;
+            int num2;
+         for(int i = 0; i<10; i++){
+                num = random.NextDouble()*10 + (20-10);
+                Console.WriteLine(num);
+                num2 = random.Next(10, 20); // 10 to 20
+                Console.WriteLine(num2);
+                num2 = random.Next(10); // 0 to 10
+                Console.WriteLine(num2);
+                num2 = random.Next(); // 0 to max int
+                Console.WriteLine(num2);
+            }
+
+
         }
     }
 }
