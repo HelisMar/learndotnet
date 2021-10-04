@@ -16,7 +16,7 @@ namespace learndotnet
              text = File.ReadAllText("lugemiseks.txt");
              Console.Write(text);
 
-            //FileStream file = File.OpenWrite("file.txt"); //Avab faili kirjutamiseks
+             //FileStream file = File.OpenWrite("file.txt"); //Avab faili kirjutamiseks
               //  file.Write(Mida); //Saab byte faili kirjutada 
 
 
